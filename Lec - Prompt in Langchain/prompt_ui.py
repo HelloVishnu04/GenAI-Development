@@ -6,7 +6,6 @@ import streamlit as st
 
 load_dotenv()
 model = ChatGoogleGenerativeAI(model='gemini-3.5-flash-lite', temperature=0.7)
-()
 chain = model | StrOutputParser
 
 st.header('Reasearch Tool')
