@@ -1,6 +1,7 @@
 # LangChain Core
 langchain
 langchain-core
+langchain.output_parsers
 
 # OpenAI Integration
 langchain-openai
