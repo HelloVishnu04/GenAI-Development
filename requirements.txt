@@ -18,6 +18,9 @@ google-generativeai
 langchain-huggingface
 transformers
 huggingface-hub
+langchain-classic
+langchain-community
+
 
 # Environment Variable Management
 python-dotenv
@@ -30,3 +33,4 @@ scikit-learn
 streamlit
 StrOutputParser
 rich
+pypdf

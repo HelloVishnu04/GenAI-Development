@@ -1,0 +1,382 @@
+\documentclass[10pt,letterpaper]{article}
+
+% ============================================================
+% PACKAGES
+% ============================================================
+
+\usepackage[
+    letterpaper,
+    left=0.472in,
+    right=0.472in,
+    top=0.208in,
+    bottom=0.208in
+]{geometry}
+
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+
+% ============================================================
+% FONT
+% ============================================================
+
+\setmainfont{Carlito}
+
+% ============================================================
+% HYPERLINK SETTINGS
+% ============================================================
+
+\definecolor{linkblue}{HTML}{1155CC}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    citecolor=linkblue,
+    pdfborder={0 0 0}
+}
+
+% ============================================================
+% GENERAL FORMAT
+% ============================================================
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ============================================================
+% SECTION FORMAT
+% ============================================================
+
+\titleformat{\section}
+    {\bfseries\fontsize{10}{11}\selectfont}
+    {}
+    {0pt}
+    {}
+
+\titlespacing*{\section}
+    {0pt}
+    {6pt}
+    {2.5pt}
+
+% ============================================================
+% CUSTOM BULLET
+% ============================================================
+
+\newcommand{\resumeBullet}[1]{%
+    \noindent
+    \hspace{4pt}
+    {\fontsize{9}{10.3}\selectfont
+    \textbullet\hspace{5pt}#1}
+    \par
+    \vspace{1pt}
+}
+
+% Simple two-column heading line (no LaTeX table -> safer for ATS text extraction)
+\newcommand{\resumeHeaderLine}[2]{%
+    \noindent{\bfseries #1}\hfill{\bfseries #2}\par
+}
+
+% ============================================================
+% DOCUMENT
+% ============================================================
+
+\begin{document}
+
+% ============================================================
+% HEADER
+% ============================================================
+
+\begin{center}
+
+{\bfseries\fontsize{19}{20}\selectfont
+VISHNU KUMAR
+}
+
+\vspace{1.5pt}
+
+{\itshape\fontsize{10.5}{11.5}\selectfont
+Software Engineer -- Python \textbar\ Backend \& API Development
+}
+
+\vspace{1.5pt}
+
+{\fontsize{9.3}{10.3}\selectfont
+Agra, Uttar Pradesh, India
+\;|\;
++91 90278 72285
+\;|\;
+\href{mailto:vishnu9027872285@gmail.com}
+{vishnu9027872285@gmail.com}
+\;|\;
+\href{https://vishnukumar.pro}
+{\textcolor{linkblue}{Portfolio}}
+\;|\;
+\href{https://github.com/HelloVishnu04}
+{\textcolor{linkblue}{GitHub}}
+}
+
+\end{center}
+
+% ============================================================
+% PROFESSIONAL SUMMARY
+% ============================================================
+
+\section*{PROFESSIONAL SUMMARY}
+
+\begin{justify}
+{\fontsize{9}{10.3}\selectfont
+Final-year B.Tech Computer Science student and Python software engineer with
+hands-on experience designing, coding, and deploying REST APIs, backend
+services, and modular software systems using Python (FastAPI, Flask, Django
+REST Framework) and object-oriented design principles. Experienced in
+building scalable microservices, integrating relational and NoSQL databases,
+and automating data pipelines, with production deployment experience using
+Docker, Git/GitHub version control, and CI/CD (GitHub Actions). IBM
+SkillsBuild AI/ML Virtual Intern and Oracle Cloud Infrastructure Data Science
+Professional certified, with software delivered independently, in an
+internship setting, and through competitive hackathons.
+}
+\end{justify}
+
+% ============================================================
+% TECHNICAL SKILLS
+% ============================================================
+
+\section*{TECHNICAL SKILLS}
+
+{\fontsize{9}{10.3}\selectfont
+
+\textbf{Programming Languages:}
+Python, JavaScript/TypeScript, SQL
+
+\par\vspace{1pt}
+
+\textbf{Software Engineering:}
+Object-Oriented Programming, REST API Design, Microservices, Modular System
+Design, Debugging \& Troubleshooting, Version Control (Git/GitHub)
+
+\par\vspace{1pt}
+
+\textbf{Backend \& APIs:}
+FastAPI, Flask, Django REST Framework, JWT Authentication, WebSockets,
+Swagger/OpenAPI Documentation
+
+\par\vspace{1pt}
+
+\textbf{Databases:}
+PostgreSQL, MySQL, MongoDB, Redis
+
+\par\vspace{1pt}
+
+\textbf{Frontend:}
+React, MERN Stack, HTML/CSS
+
+\par\vspace{1pt}
+
+\textbf{DevOps \& Cloud:}
+Docker, GitHub Actions (CI/CD), AWS, Oracle Cloud Infrastructure (OCI)
+
+\par\vspace{1pt}
+
+\textbf{Data \& ML (applied):}
+Pandas, NumPy, Scikit-learn, TensorFlow, Hugging Face, LangChain
+
+}
+
+% ============================================================
+% PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section*{PROFESSIONAL EXPERIENCE}
+
+\resumeHeaderLine{IBM SkillsBuild (PBEL Program) -- AI/ML Virtual Intern}{Jun 2026 -- Aug 2026}
+
+\vspace{1.5pt}
+
+{\fontsize{9}{10.3}\selectfont
+{\itshape Project}
+\href{https://github.com/HelloVishnu04/Recon.git}
+{\textcolor{linkblue}{\itshape
+: Recon -- Cybersecurity Threat-Intelligence Backend System
+}}
+}
+
+\vspace{2pt}
+
+\resumeBullet{
+Designed and implemented a Python REST API (FastAPI) that serves a Random
+Forest classification model to detect 5 network-attack categories, with
+Swagger-documented endpoints for production consumption.
+}
+
+\resumeBullet{
+Built modular, object-oriented data-preprocessing pipelines in Python
+(Pandas, Scikit-learn) implementing feature scaling, missing-value
+imputation, and correlation-based feature selection on high-dimensional
+telemetry data.
+}
+
+\resumeBullet{
+Engineered a dual-server backend architecture -- a FastAPI inference service
+plus a Flask dashboard -- with pickle-based model versioning, delivering a
+working system within a 2-month Agile sprint.
+}
+
+% ============================================================
+% ENGINEERING PROJECTS
+% ============================================================
+
+\section*{ENGINEERING PROJECTS}
+
+% ------------------------------------------------------------
+% S.A.F.E.
+% ------------------------------------------------------------
+
+\noindent
+\href{https://github.com/HelloVishnu04/S.A.F.E.git}
+{\textcolor{linkblue}{\textbf{S.A.F.E. -- Real-Time Python Backend Pipeline}}}
+{\bfseries\ (2026)}
+\hspace{4pt}
+{\itshape -- Python, REST API, TensorFlow}
+
+\vspace{2pt}
+
+\resumeBullet{
+Designed and deployed a real-time, end-to-end ingestion-to-inference backend
+pipeline in Python with automated model training, versioning, and a
+scalable REST API for serving predictions.
+}
+
+% ------------------------------------------------------------
+% SentiScan
+% ------------------------------------------------------------
+
+\noindent
+\href{https://github.com/HelloVishnu04/Sentiment-Analysis.git}
+{\textcolor{linkblue}{\textbf{SentiScan -- Flask REST API \& NLP Engine}}}
+{\bfseries\ (2025)}
+\hspace{4pt}
+{\itshape -- Python, Flask, REST API}
+
+\vspace{2pt}
+
+\resumeBullet{
+Designed and deployed a Flask-based REST microservice serving a
+Bidirectional LSTM sentiment-classification model, achieving 92.4\%
+accuracy across 50K real-world reviews.
+}
+
+\resumeBullet{
+Built and exposed real-time inference endpoints in Python for low-latency,
+production-style text-sentiment scoring.
+}
+
+% ------------------------------------------------------------
+% MediPredict
+% ------------------------------------------------------------
+
+\noindent
+\href{https://github.com/HelloVishnu04/MediPredict-.git}
+{\textcolor{linkblue}{\textbf{MediPredict -- Python ML Recommendation Engine}}}
+{\bfseries\ (2025)}
+\hspace{4pt}
+{\itshape -- Python, Scikit-learn, XGBoost}
+
+\vspace{2pt}
+
+\resumeBullet{
+Engineered automated model-selection logic in Python across 7 medical
+prediction domains, achieving a 91.3\% mean accuracy through ensemble
+logic.
+}
+
+\resumeBullet{
+Built an interactive Python (Streamlit) interface delivering real-time,
+explainable predictions.
+}
+
+% ------------------------------------------------------------
+% GPT LLM Playground
+% ------------------------------------------------------------
+
+\noindent
+\href{https://github.com/HelloVishnu04/GPT_LLM_Playground.git}
+{\textcolor{linkblue}{\textbf{GPT LLM Playground -- Transformer Built From Scratch}}}
+{\bfseries\ (2026)}
+\hspace{4pt}
+{\itshape -- Python, TensorFlow}
+
+\vspace{2pt}
+
+\resumeBullet{
+Implemented a GPT-1-style transformer architecture from scratch in Python,
+building the attention and tokenization mechanics underlying modern
+generative-AI systems.
+}
+
+\resumeBullet{
+Designed modular, reusable Python pipelines for data preprocessing,
+training, and inference, enabling reproducible experimentation.
+}
+
+% ============================================================
+% EDUCATION
+% ============================================================
+
+\section*{EDUCATION}
+
+\resumeHeaderLine{B.Tech in Computer Science -- Anand Engineering College, Agra (AKTU)}{2023 -- 2027 (Expected)}
+
+\vspace{2pt}
+
+\resumeHeaderLine{Intermediate (PCM) \& High School (Science) -- Shri Narsingh Bhagwan Inter College, Agra}{2020 -- 2022}
+
+% ============================================================
+% CERTIFICATIONS
+% ============================================================
+
+\section*{CERTIFICATIONS}
+
+\resumeBullet{
+Oracle Cloud Infrastructure (OCI) Data Science Professional -- Oracle (2025)
+}
+
+\resumeBullet{
+Exploratory Data Analysis, Gold Certification (NSQF Level 5) -- NASSCOM
+FutureSkills Prime, MeitY, Govt. of India (2026)
+}
+
+\resumeBullet{
+SQL Certificate (Intermediate) -- HackerRank (2024)
+}
+
+% ============================================================
+% ACHIEVEMENTS
+% ============================================================
+
+\section*{ACHIEVEMENTS}
+
+\resumeBullet{
+Maintains 17+ public GitHub repositories spanning Python software
+projects, REST APIs, and applied machine-learning systems
+(\href{https://github.com/HelloVishnu04}
+{\textcolor{linkblue}{github.com/HelloVishnu04}}).
+}
+
+\resumeBullet{
+2nd Place -- Hack The Box TechTrix Cybersecurity Competition; Top 5
+Finalist (Pan-India) -- Virtual Lab Hackathon.
+}
+
+\resumeBullet{
+Solved 200+ DSA problems across LeetCode \& HackerRank, strengthening
+object-oriented problem solving, data structures, and algorithm design in
+Python.
+}
+
+\end{document}
