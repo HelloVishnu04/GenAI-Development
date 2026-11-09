@@ -14,12 +14,14 @@ langchain-anthropic
 langchain-google-genai
 google-generativeai
 
+
 # Hugging Face Integration
 langchain-huggingface
 transformers
 huggingface-hub
 langchain-classic
 langchain-community
+langchain-chroma
 
 
 # Environment Variable Management
@@ -30,7 +32,6 @@ numpy
 scikit-learn
 
 # ui library
-streamlit
-StrOutputParser
 rich
 pypdf
+faiss-cpu
